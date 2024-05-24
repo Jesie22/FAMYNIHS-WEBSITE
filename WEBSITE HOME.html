@@ -147,6 +147,134 @@
             margin: 0 0 20px 0;
             overflow-y: scroll;
         }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famy National Integrated High School</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #226e36;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #226e36;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #226e36;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            color: #226e36;
+            border-bottom: 2px solid #226e36;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .enrollment {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .enroll-btn {
+            background-color: #226e36;
+            color: white;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 150px;
+            height: 190px;
+        }
+        .enroll-btn:hover {
+            background-color: #1e5d2e;
+            transform: translateY(-5px);
+        }
+        .enroll-btn img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        .tab-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .tab {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 450px;
+            transition: transform 0.3s;
+        }
+        .tab:hover {
+            transform: translateY(-5px);
+        }
+        .tab img {
+            width: 100%;
+            height: auto;
+        }
+        .tab-content {
+            padding: 20px;
+        }
+        .tab-content h4 {
+            margin: 0 0 10px 0;
+            color: #226e36;
+            text-align: center;
+        }
+        .tab-content p {
+            margin: 0 0 20px 0;
+        }
         .tab-content a {
             color: #226e36;
             text-decoration: none;
@@ -161,29 +289,43 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
             nav {
                 flex-direction: column;
             }
             nav a {
                 padding: 10px;
                 border-bottom: 1px solid #ddd;
+                width: 100%;
             }
             .tab-container {
                 flex-direction: column;
                 align-items: center;
             }
         }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+            .enroll-btn {
+                width: 100px;
+                height: 140px;
+                padding: 10px;
+            }
+            .enroll-btn img {
+                width: 60px;
+                height: 60px;
+            }
+        }
     </style>
 </head>
 <body>
-    
 <header>
-    <img src="https://i.ibb.co/W6ZZFF8/Blue-Gradient-Header-Banner-20240519-134247-0000.png" alt="logo" width="1280" height="300">
+    <img src="https://i.ibb.co/W6ZZFF8/Blue-Gradient-Header-Banner-20240519-134247-0000.png" alt="logo">
     <h1>Welcome to Famy National Integrated High School</h1>
 </header>
 
@@ -199,32 +341,31 @@
 <div class="container">
     <section id="home">
         <h2>Home</h2>
-        <home><img src="https://i.ibb.co/V2YkzMQ/Untitled188-20240521223427.png" alt="Home Image"></home>
+        <img src="https://i.ibb.co/V2YkzMQ/Untitled188-20240521223427.png" alt="Home Image">
         <p>Welcome to our school's official homepage. Here you will find the latest news, events, and information about our institution.</p>
     </section>
     
     <section id="about">
         <h2>About Us</h2>
-        <about><img src="https://i.ibb.co/D47yh3h/images-2024-05-15-T020708-119.jpg" alt="About Us Image"></about>
+        <img src="https://i.ibb.co/D47yh3h/images-2024-05-15-T020708-119.jpg" alt="About Image">
         <p>Famy National Integrated High School is a public high school located in the municipality of Famy, Laguna in the Philippines. The school is committed to providing quality education to its students and has a strong focus on academic excellence and social responsibility. Famy National Integrated High School offers various academic tracks, including Science, Technology, Engineering, and Mathematics (STEM), Accountancy, Business, and Management (ABM), and Humanities and Social Sciences (HUMSS), among others. The school is also proud of its strong sports and cultural programs, which promote a well-rounded education and foster the holistic development of its students.</p>
     </section>
-        
+    
     <section id="enrollment">
         <h2>Enrollment</h2>
-        <div class="enrollment"> 
+        <div class="enrollment">
             <button class="enroll-btn">
                 <img src="https://i.ibb.co/V2YkzMQ/Untitled188-20240521223427.png" alt="Enroll Now">
                 <h3>ENROLL NOW!</h3>
             </button>
         </div>
     </section>
-        
+    
     <section id="info">
         <h2>Information</h2>
         <div class="tab-container">
-            
             <div class="tab">
-                <img src="https://i.ibb.co/XWBd4Xt/IMG-20240523-115033.jpg" alt="History Image">
+                <img src="https://i.ibb.co/bdsvYD3/IMG-20240523-115033.jpg" alt="History Image">
                 <div class="tab-content">
                     <h4>FNIHS BACKGROUND</h4>
                     <p>Famy National Integrated High School (FNIHS) is a public secondary school located in the municipality of Famy, Laguna, Philippines. It was established in 1986 and offers a range of academic programs from junior high school to senior high school, including technical-vocational courses. The school aims to provide quality education and produce competent and responsible graduates who can contribute to nation-building. FNIHS has a diverse student population and is known for its active involvement in community service projects and extracurricular activities.</p>
@@ -233,19 +374,18 @@
             </div>
             
             <div class="tab">
-                <img src="https://i.ibb.co/1KwgHRm/images-2024-05-15-T020715-470.jpg" alt="History Image">
+                <img src="https://i.ibb.co/bzdJ71v/images-2024-05-15-T020715-470.jpg" alt="History Image">
                 <div class="tab-content">
                     <h4>FNIHS HISTORY</h4>
                     <p>Famy National Integrated High School, originally a small farm, transformed into a place of knowledge and wisdom. Under President Ferdinand Marcos' regime, Presidential Decree no. 479, s. 1974, was signed into law in 1962. In 1969, the principal of Famy Elementary School, Mr. Nemecio Abary, and other educators, along with district supervisors and parents, opened a new school with a small population of 64 students. The school was later named Famy Community High School, and a Marcos Type Building was built for knowledge enhancement and skills development. The school's first recognition was as champion in the Citizen Army Training Competition. Mrs. Elfleda Real became principal in 1978, and Mrs. Ligaya Manaig served as Officer-in-Charge in 1983. From 1985 to 2013, Mrs. Lourdes served as the school's mother, raising the standards of education. The school was renamed Famy National High School in 1994, but was unable to celebrate its Silver Founding Anniversary due to Typhoon Katrina.</p>
                 </div>
             </div>
-            </div>
-            <div class="tab-container">
-            <info>
-                <img src="https://i.ibb.co/4PkDJXB/received-1353300378698429.png" alt="Tree Planting"></info>
+        </div>
+        <div class="tab-container">
+            <img src="https://i.ibb.co/4PkDJXB/received-1353300378698429.png" alt="Tree Planting" class="info-img">
         </div>
     </section>
-                
+    
     <section id="news">
         <h2>MISSION AND VISION</h2>
         <div class="tab-container">
@@ -278,14 +418,14 @@
             </div>
         </div>
     </section>
-        
+    
     <section id="contact">
         <h2>Contact</h2>
         <p>Address: Famy, Laguna</p>
         <p>Email: info@famynational.edu.ph</p>
         <p>Phone: (123) 456-7890</p>
     </section>
-
+    
     <section id="members">
         <h2>Members</h2>
         <div class="tab-container">
